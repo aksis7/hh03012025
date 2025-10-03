@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сервис загрузки файлов</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Сервис загрузки файлов</h1>
+
+    <form id="task-form" class="task-form">
+      <label for="urls-input">Введите URL-адреса файлов (каждый с новой строки):</label>
+      <textarea id="urls-input" placeholder="https://example.com/file1.jpg
+https://example.com/file2.zip" rows="4"></textarea>
+      <button type="submit">Создать задачу</button>
+    </form>
+
+    <section id="active-section" class="tasks-section">
+      <div class="section-header">
+        <h2>Текущие задачи</h2>
+        <button id="refresh-active" class="linklike" title="Обновить статусы">Обновить</button>
+      </div>
+      <ul id="tasks-list" class="tasks-list"></ul>
+      <p id="no-active" class="muted hidden">Нет активных задач</p>
+    </section>
+
+    <section id="past-section" class="tasks-section">
+      <div class="section-header">
+        <h2>Прошедшие задачи</h2>
+        <div class="section-actions">
+          <button id="toggle-past" class="linklike" aria-expanded="true">Свернуть</button>
+          <button id="clear-past" class="linklike danger" title="Удалить список прошедших задач">Очистить</button>
+        </div>
+      </div>
+      <ul id="past-list" class="tasks-list"></ul>
+      <p id="no-past" class="muted hidden">История задач пуста</p>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

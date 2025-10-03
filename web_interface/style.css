@@ -1,0 +1,140 @@
+/* Базовая стилизация */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Форма */
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.task-form textarea {
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  font-size: 14px;
+  min-height: 100px;
+  background: #fff;
+}
+.task-form button {
+  align-self: flex-start;
+  padding: 8px 16px;
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.task-form button:hover { background-color: #0b5ed7; }
+
+/* Разделы */
+.tasks-section {
+  background-color: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(16, 24, 40, 0.08);
+  margin-bottom: 16px;
+}
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+.section-actions { display: flex; gap: 8px; }
+.linklike {
+  background: transparent;
+  border: none;
+  color: #0d6efd;
+  cursor: pointer;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+.linklike:hover { background: #e7f1ff; }
+.linklike.danger { color: #dc3545; }
+.linklike.danger:hover { background: #fde7ea; }
+.muted { color: #6c757d; }
+.hidden { display: none; }
+
+/* Списки задач и файлов */
+.tasks-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.task-item {
+  border-top: 1px solid #eef2f7;
+  padding: 12px 0;
+}
+.task-item:first-child { border-top: none; }
+.task-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.task-header h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  word-break: break-all;
+}
+.task-meta {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+}
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badge.pending { background: #f1f3f5; color: #495057; }
+.badge.in-progress { background: #cff4fc; color: #055160; }
+.badge.completed { background: #d1e7dd; color: #0a3622; }
+.badge.completed_with_errors { background: #fff3cd; color: #664d03; }
+.badge.error { background: #f8d7da; color: #842029; }
+
+.task-progress { margin: 6px 0 0 0; font-size: 13px; color: #475467; }
+
+.files-list {
+  list-style: none;
+  padding-left: 14px;
+  margin-top: 8px;
+}
+.file-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+.file-name { flex: 1; word-break: break-all; }
+.file-status.pending { color: #6c757d; }
+.file-status.in-progress { color: #0aa2c0; }
+.file-status.completed { color: #198754; }
+.file-status.error { color: #dc3545; }
+.file-error { color: #d63384; font-style: italic; margin-left: 6px; }

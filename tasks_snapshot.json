@@ -1,0 +1,18 @@
+{
+  "089a5976a12465e5e8413cbf57e87eda": {
+    "id": "089a5976a12465e5e8413cbf57e87eda",
+    "files": [
+      {
+        "url": "https://nbg1-speed.hetzner.com/1GB.bin",
+        "status": "in‑progress"
+      },
+      {
+        "url": "https://nbg1-speed.hetzner.com/100MB.bin",
+        "status": "completed"
+      }
+    ],
+    "status": "in‑progress",
+    "created_at": "2025-10-03T16:54:09.3908084Z",
+    "updated_at": "2025-10-03T16:55:30.0426203Z"
+  }
+}
