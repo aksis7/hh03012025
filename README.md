@@ -31,8 +31,7 @@
     
     - Атомарная запись: снапшоты пишутся через временный файл и rename, чтобы избежать порчи данных.
 ## Запуск проекта
- - git clone https://github.com/aksis7/hh03012025.git
- - cd hh03012025
+
  - go run main.go
  - запустить index.html через любой сервер из папки web_interface
 ### Требования
@@ -44,5 +43,5 @@
 
 1. Клонируйте репозиторий:
    ```bash
-   git clone https://github.com/your_username/downloadsvc.git
-   cd downloadsvc
+   - git clone https://github.com/aksis7/hh03012025.git
+   - cd hh03012025
